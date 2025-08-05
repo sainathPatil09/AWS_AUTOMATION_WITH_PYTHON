@@ -3,7 +3,6 @@ import boto3
 s3_client = boto3.client("s3")
 
 # upload = s3_client.upload_file(r"C:\Users\SAINATH PATIL\Desktop\Gen_AI.pdf", 'my-new-bucket-demo-yt', 'demo_ai.pdf')
-# print("File uploaded successfully.") if upload else print("File upload failed.")
 
 
 

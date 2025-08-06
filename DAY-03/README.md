@@ -13,14 +13,15 @@ It covers:
 
 ##  Key EC2 Concepts to Know
 
-| Concept            | Description                                                                         |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| **AMI ID**         | Amazon Machine Image ID (e.g., `ami-0abcdef12345`) – required to launch an instance |
-| **Instance Type**  | e.g., `t2.micro` (free-tier eligible)                                               |
-| **Key Pair Name**  | Required for SSH access                                                             |
-| **Security Group** | Firewall rules                                                                      |
-| **Instance ID**    | Unique identifier for your EC2 instance                                             |
-| **Tags**           | Metadata for better management                                                      |
+| **Concept**        | **Description**                                                                                                                                                                                                                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AMI ID**         | **Amazon Machine Image ID** (e.g., `ami-0abcdef12345`) <br> It is a template that contains the software configuration (OS, application server, applications) required to launch an instance. You must specify an AMI when launching an EC2 instance. |
+| **Instance Type**  | Defines the **hardware configuration** of your EC2 instance. <br> For example, `t2.micro` is a **free-tier eligible** instance type with limited CPU and memory – suitable for light workloads.                                                      |
+| **Key Pair Name**  | Used for **SSH access** to your EC2 instance. <br> A key pair consists of a public key (stored by AWS) and a private key (downloaded by you). It allows you to securely connect to your instance.                                                    |
+| **Security Group** | Acts as a **virtual firewall** for your EC2 instance. <br> It controls **inbound and outbound traffic** (e.g., allow port 22 for SSH or port 80 for HTTP).                                                                                           |
+| **Instance ID**    | A **unique identifier** (e.g., `i-1234567890abcdef0`) automatically assigned by AWS to your running instance. Used to manage and track the instance.                                                                                                 |
+| **Tags**           | **Key-value pairs** you can assign to AWS resources (e.g., Name = "WebServer") for **easier organization, search, automation, and billing management**.                                                                                              |
+
 
 ---
 

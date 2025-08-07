@@ -5,10 +5,10 @@ ec2_client = boto3.client('ec2')
 response = ec2_client.run_instances(
     ImageId='ami-0f918f7e67a3323f0',
     InstanceType='t2.micro',
-    KeyName='demo-vpckey',
+    KeyName='yt-demo',
     MinCount=1,
     MaxCount=1,
-    # SecurityGroupIds=['sg-0abc123def456ghij'],
+    SecurityGroupIds=['sg-00e8760562d9a58c8'],
     # BlockDeviceMappings=[
     #     {
     #         'DeviceName': '/dev/xvda',  # Default root volume device name
